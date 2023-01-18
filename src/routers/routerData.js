@@ -18,7 +18,7 @@ const Lesson13 = lazy(()=>import ('../page/13_3DText'))
 export const routerData = [
   {
     element: <Lesson3/>,
-    path: '/',
+    path: '/lesson3',
     exact: true,
     key: 'lesson3'
   },
