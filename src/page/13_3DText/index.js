@@ -190,4 +190,9 @@ function Lesson13() {
 
 export default Lesson13
 
-//14课讲的是自动化部署工具vercel
+//14课讲的是自动化部署工具
+// 可以直接连接github仓库，
+// 也可以在项目的本地版本安装
+//yarn add vercel
+//在package.json中script里添加"deploy": "vercel --prod"
+// npm run deploy
