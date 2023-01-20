@@ -11,6 +11,7 @@ const Lesson10 = lazy(()=>import ('../page/10_debug_GUI'))
 const Lesson11 = lazy(()=>import ('../page/11_Textures'))
 const Lesson12 = lazy(()=>import ('../page/12_Materials'))
 const Lesson13 = lazy(()=>import ('../page/13_3DText'))
+const Lesson15 = lazy(()=>import ('../page/15_Light'))
 
 
 
@@ -82,5 +83,10 @@ export const routerData = [
     exact: true,
     key: 'lesson13'
   },
-  
+  {
+    element: <Lesson15/>,
+    path: '/lesson15',
+    exact: true,
+    key: 'lesson15'
+  },
 ]
