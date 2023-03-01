@@ -119,7 +119,7 @@ function Lesson15() {
     new THREE.PlaneGeometry(5, 5),
     material
   )
-  plane.rotation.x = - Math.PI >> 1
+  plane.rotation.x = -  Math.PI * 0.5
   plane.position.y = - 0.65
 
   scene.add(sphere, cube, torus, plane)
@@ -156,7 +156,8 @@ function Lesson15() {
     renderer.setSize(sizes.width, sizes.height)
 
     //消除阶梯感，并限制渲染的最高像素比为2
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    
     
     // Controls 使用内置的OrbitControls控件
     const controls = new OrbitControls(camera,canvasRef.current)
